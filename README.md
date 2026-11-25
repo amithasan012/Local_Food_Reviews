@@ -104,7 +104,8 @@ The application follows a standard Android architecture suitable for a small Kot
 
 | Login | Create Account | Change Password |
 |---|---|---|
-| <img src="docs/images/login.png" alt="Login screen" width="220"> | <img src="docs/images/register.png" alt="Create account screen" width="220"> | <img src="docs/images/change_password.png" alt="Change password screen" width="220"> |
+| <img width="1080" height="2340" alt="image" src="https://github.com/user-attachments/assets/4edc931d-dabd-455e-adfd-6cd782b61489" />
+ | <img src="docs/images/register.png" alt="Create account screen" width="220"> | <img src="docs/images/change_password.png" alt="Change password screen" width="220"> |
 
 ### Restaurant Exploration and Navigation
 
@@ -209,14 +210,13 @@ This is a student project. Improvements and suggestions are welcome. Before addi
 For project questions or feedback, update this section with your contact information:
 
 ```text
-[Your email address]
+amithasanmr@gmail.com
 ```
 
 ## Author
 
-**[Your Name]**  
-**[Your Roll or Student ID]**  
-**[Course Name]**  
-*Department of [Department Name]*  
-*[Institution Name]*  
+**M.R. Amit Hasan**  
+**2320405**  
+*Department of CSE*  
+*University of Brahmanbaria*  
 **Year:** 2026

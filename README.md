@@ -2,7 +2,8 @@
 
 <br>
 <p align="center">
-  <img src="docs/images/local-food-reviews-logo.png" alt="Local Food Reviews logo" width="18%">
+ <img width="512" height="512" alt="ramen" src="https://github.com/user-attachments/assets/3056abe0-9afc-40a0-aa79-fd50942033fc" />
+
 </p>
 
 <p align="center">
@@ -105,19 +106,24 @@ The application follows a standard Android architecture suitable for a small Kot
 | Login | Create Account | Change Password |
 |---|---|---|
 | <img width="1080" height="2340" alt="image" src="https://github.com/user-attachments/assets/4edc931d-dabd-455e-adfd-6cd782b61489" />
- | <img src="docs/images/register.png" alt="Create account screen" width="220"> | <img src="docs/images/change_password.png" alt="Change password screen" width="220"> |
+ | <img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/0de62577-c098-4022-9ca5-db408329ccd4" />
+ | <img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/9c84539c-49cb-416a-bd8c-f6dc5a80ce5b" />
+ |
 
 ### Restaurant Exploration and Navigation
 
 | Review Feed and Search | Navigation Drawer |
 |---|---|
-| <img src="docs/images/feed.png" alt="Review feed screen" width="250"> | <img src="docs/images/drawer.png" alt="Navigation drawer screen" width="250"> |
+| <img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/92d3ae06-3ec6-41e2-a014-43d81ff144d4" />
+ | <img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/26975036-2f70-4c9c-b720-9d18f20ee4c4" />
+ |
 
 ### Review Creation and Management
 
 | Add Review | My Reviews / Inline Edit |
 |---|---|
-| <img src="docs/images/create_review.png" alt="Add review screen" width="250"> | <img src="docs/images/my_reviews.png" alt="My reviews screen" width="250"> |
+| <img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/f2134b57-3b3f-4e3f-97d6-76bfb1827e83" />
+ | <img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/b027f6b6-87b9-4ebc-a56d-5f65ec339968" />|
 
 ## Firebase Data Design
 

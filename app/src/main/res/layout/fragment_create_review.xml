@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/food_cream">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Share a local favourite" android:textColor="@color/food_text" android:textSize="23sp" android:textStyle="bold" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Add one food photo and tell people what you thought." android:textColor="@color/food_text" />
+        <ImageView android:id="@+id/photo_preview" android:layout_width="match_parent" android:layout_height="190dp" android:layout_marginTop="18dp" android:background="@drawable/bg_photo_placeholder" android:contentDescription="Selected food photo" android:padding="32dp" android:scaleType="centerCrop" android:src="@android:drawable/ic_menu_report_image" />
+        <TextView android:id="@+id/photo_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="One photo is required" android:textColor="@color/food_text" android:textSize="12sp" />
+        <com.google.android.material.button.MaterialButton android:textColor="@android:color/white" android:backgroundTint="@color/food_primary" android:id="@+id/choose_photo_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Choose photo" />
+        <com.google.android.material.textfield.TextInputLayout app:hintTextColor="@color/food_text" android:id="@+id/restaurant_input" style="@style/Widget.Material3.TextInputLayout.OutlinedBox" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:hint="Restaurant name">
+            <com.google.android.material.textfield.TextInputEditText android:textColor="@color/food_text" android:textColorHint="@color/food_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLength="60" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout app:hintTextColor="@color/food_text" android:id="@+id/cuisine_input" style="@style/Widget.Material3.TextInputLayout.OutlinedBox" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:hint="Cuisine (e.g. Bengali, Thai)">
+            <com.google.android.material.textfield.TextInputEditText android:textColor="@color/food_text" android:textColorHint="@color/food_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLength="30" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Your rating" android:textColor="@color/food_text" android:textStyle="bold" />
+            <RatingBar android:id="@+id/rating_bar" style="?android:attr/ratingBarStyle" android:isIndicator="false" android:clickable="true" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:numStars="5" android:stepSize="1" android:progressTint="@color/food_primary" />
+        </LinearLayout>
+        <TextView android:id="@+id/rating_hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/food_error" android:textSize="12sp" />
+        <com.google.android.material.textfield.TextInputLayout app:hintTextColor="@color/food_text" android:id="@+id/caption_input" style="@style/Widget.Material3.TextInputLayout.OutlinedBox" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:hint="Your review" app:counterEnabled="true" app:counterMaxLength="1024">
+            <com.google.android.material.textfield.TextInputEditText android:textColor="@color/food_text" android:textColorHint="@color/food_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="top" android:inputType="textMultiLine|textCapSentences" android:maxLength="1024" android:minLines="4" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView android:id="@+id/message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:textColor="@color/food_error" android:visibility="gone" />
+        <ProgressBar android:id="@+id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:layout_marginTop="12dp" android:visibility="gone" />
+        <com.google.android.material.button.MaterialButton android:textColor="@android:color/white" android:backgroundTint="@color/food_primary" android:id="@+id/post_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="Post review" />
+    </LinearLayout>
+</ScrollView>

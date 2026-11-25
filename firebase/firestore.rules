@@ -1,0 +1,73 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() { return request.auth != null; }
+
+    match /users/{userId} {
+      // Profiles are private. Review cards include their author's public username.
+      allow read: if signedIn() && request.auth.uid == userId;
+      allow create: if signedIn()
+                    && request.auth.uid == userId
+                    && request.resource.data.uid == request.auth.uid
+                    && request.resource.data.username is string
+                    && request.resource.data.usernameLowercase is string;
+      allow update: if signedIn()
+                    && request.auth.uid == userId
+                    && request.resource.data.uid == resource.data.uid
+                    && request.resource.data.username == resource.data.username
+                    && request.resource.data.usernameLowercase == resource.data.usernameLowercase;
+      allow delete: if false;
+    }
+
+    // One document per lowercase username prevents duplicate usernames.
+    match /usernames/{username} {
+      allow get: if signedIn();
+      allow list: if false;
+      allow create: if signedIn()
+                    && !exists(/databases/$(database)/documents/usernames/$(username))
+                    && request.resource.data.uid == request.auth.uid
+                    && request.resource.data.username == username;
+      allow update, delete: if false;
+    }
+
+    match /reviews/{reviewId} {
+      allow read: if signedIn();
+      allow create: if signedIn()
+                    && request.resource.data.uid == request.auth.uid
+                    && request.resource.data.username is string
+                    && request.resource.data.restaurantName is string
+                    && request.resource.data.restaurantName.size() >= 2
+                    && request.resource.data.restaurantName.size() <= 60
+                    && request.resource.data.cuisine is string
+                    && request.resource.data.cuisine.size() >= 2
+                    && request.resource.data.cuisine.size() <= 30
+                    && request.resource.data.rating is int
+                    && request.resource.data.rating >= 1
+                    && request.resource.data.rating <= 5
+                    && request.resource.data.caption is string
+                    && request.resource.data.caption.size() >= 10
+                    && request.resource.data.caption.size() <= 1024
+                    && request.resource.data.photoBase64 is string
+                    && request.resource.data.photoBase64.size() <= 500000;
+      allow update: if signedIn()
+                    && resource.data.uid == request.auth.uid
+                    && request.resource.data.uid == resource.data.uid
+                    && request.resource.data.username == resource.data.username
+                    && request.resource.data.restaurantName is string
+                    && request.resource.data.restaurantName.size() >= 2
+                    && request.resource.data.restaurantName.size() <= 60
+                    && request.resource.data.cuisine is string
+                    && request.resource.data.cuisine.size() >= 2
+                    && request.resource.data.cuisine.size() <= 30
+                    && request.resource.data.rating is int
+                    && request.resource.data.rating >= 1
+                    && request.resource.data.rating <= 5
+                    && request.resource.data.caption is string
+                    && request.resource.data.caption.size() >= 10
+                    && request.resource.data.caption.size() <= 1024
+                    && request.resource.data.photoBase64 is string
+                    && request.resource.data.photoBase64.size() <= 500000;
+      allow delete: if signedIn() && resource.data.uid == request.auth.uid;
+    }
+  }
+}

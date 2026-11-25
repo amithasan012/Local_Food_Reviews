@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment android:id="@+id/loginFragment" android:name="com.localfoodreviews.app.ui.LoginFragment" android:label="Sign in">
+        <action android:id="@+id/action_loginFragment_to_registerFragment" app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment android:id="@+id/registerFragment" android:name="com.localfoodreviews.app.ui.RegisterFragment" android:label="Create account" />
+    <fragment android:id="@+id/feedFragment" android:name="com.localfoodreviews.app.ui.FeedFragment" android:label="Food reviews" />
+    <fragment android:id="@+id/createReviewFragment" android:name="com.localfoodreviews.app.ui.CreateReviewFragment" android:label="Add a review" />
+    <fragment android:id="@+id/myReviewsFragment" android:name="com.localfoodreviews.app.ui.MyReviewsFragment" android:label="My reviews" />
+    <fragment android:id="@+id/changePasswordFragment" android:name="com.localfoodreviews.app.ui.ChangePasswordFragment" android:label="Change password" />
+</navigation>

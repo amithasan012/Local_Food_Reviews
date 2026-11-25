@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/drawer_group" android:checkableBehavior="single">
+        <item android:id="@+id/feedFragment" android:icon="@android:drawable/ic_menu_agenda" android:title="Feed" />
+        <item android:id="@+id/createReviewFragment" android:icon="@android:drawable/ic_input_add" android:title="Add review" />
+        <item android:id="@+id/myReviewsFragment" android:icon="@android:drawable/ic_menu_edit" android:title="My reviews" />
+        <item android:id="@+id/changePasswordFragment" android:icon="@android:drawable/ic_lock_idle_lock" android:title="Change password" />
+        <item android:id="@+id/logout" android:icon="@android:drawable/ic_lock_power_off" android:title="Log out" />
+    </group>
+</menu>

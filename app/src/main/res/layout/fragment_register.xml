@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/food_cream" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="28dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="Create account" android:textColor="@color/food_text" android:textSize="28sp" android:textStyle="bold" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Your username is visible on the reviews you share." android:textColor="@color/food_text" />
+        <com.google.android.material.textfield.TextInputLayout app:hintTextColor="@color/food_text" android:id="@+id/username_input" style="@style/Widget.Material3.TextInputLayout.OutlinedBox" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="26dp" android:hint="Username">
+            <com.google.android.material.textfield.TextInputEditText android:textColor="@color/food_text" android:textColorHint="@color/food_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="3–20 letters, numbers, or underscore. Usernames are unique." android:textColor="@color/food_text" android:textSize="12sp" />
+        <com.google.android.material.textfield.TextInputLayout app:hintTextColor="@color/food_text" android:id="@+id/email_input" style="@style/Widget.Material3.TextInputLayout.OutlinedBox" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:hint="Email address">
+            <com.google.android.material.textfield.TextInputEditText android:textColor="@color/food_text" android:textColorHint="@color/food_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout app:hintTextColor="@color/food_text" android:id="@+id/password_input" style="@style/Widget.Material3.TextInputLayout.OutlinedBox" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:hint="Password (at least 6 characters)" app:endIconMode="password_toggle">
+            <com.google.android.material.textfield.TextInputEditText android:textColor="@color/food_text" android:textColorHint="@color/food_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout app:hintTextColor="@color/food_text" android:id="@+id/confirm_password_input" style="@style/Widget.Material3.TextInputLayout.OutlinedBox" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:hint="Confirm password" app:endIconMode="password_toggle">
+            <com.google.android.material.textfield.TextInputEditText android:textColor="@color/food_text" android:textColorHint="@color/food_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView android:id="@+id/message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:textColor="@color/food_error" android:visibility="gone" />
+        <ProgressBar android:id="@+id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:layout_marginTop="12dp" android:visibility="gone" />
+        <com.google.android.material.button.MaterialButton android:textColor="@android:color/white" android:backgroundTint="@color/food_primary" android:id="@+id/register_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="Create account" />
+        <TextView android:id="@+id/login_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:layout_marginTop="16dp" android:padding="8dp" android:text="Already have an account? Sign in" android:textColor="@color/food_primary" android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>

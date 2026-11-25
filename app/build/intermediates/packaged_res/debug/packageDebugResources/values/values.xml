@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="food_cream">#F5F9FF</color>
+    <color name="food_error">#0D47A1</color>
+    <color name="food_primary">#1565C0</color>
+    <color name="food_primary_dark">#0D47A1</color>
+    <color name="food_secondary">#2196F3</color>
+    <color name="food_surface">#FFFFFF</color>
+    <color name="food_text">#000000</color>
+    <string name="app_name">Local Food Reviews</string>
+    <string name="by_user_on_date">%1$s · %2$s</string>
+    <string name="cuisine_format">Cuisine: %1$s</string>
+    <string name="email">Email address</string>
+    <string name="gcm_defaultSenderId" translatable="false">995966138656</string>
+    <string name="google_api_key" translatable="false">AIzaSyAtlu8_3tfwidXj2YqOy9gynOJ-V0j9MLM</string>
+    <string name="google_app_id" translatable="false">1:995966138656:android:76b7dd43c2cf4d53043f45</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAtlu8_3tfwidXj2YqOy9gynOJ-V0j9MLM</string>
+    <string name="google_storage_bucket" translatable="false">mobile-app-ec041.firebasestorage.app</string>
+    <string name="just_now">Just now</string>
+    <string name="project_id" translatable="false">mobile-app-ec041</string>
+    <string name="rating_format">★ %1$d / 5</string>
+    <string name="request_failed">Request failed. Please try again.</string>
+    <string name="reset_email_description">Enter your email and we will send a password-reset link.</string>
+    <string name="reset_email_sent">Reset email sent. Please check your inbox.</string>
+    <string name="send">Send</string>
+    <string name="send_reset_email">Send reset email</string>
+    <string name="valid_email_required">Enter a valid email address.</string>
+    <style name="Theme.LocalFoodReviews" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/food_primary</item>
+        <item name="colorSecondary">@color/food_secondary</item>
+        <item name="android:colorAccent">@color/food_secondary</item>
+        <item name="android:navigationBarColor">@color/food_cream</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+    </style>
+</resources>

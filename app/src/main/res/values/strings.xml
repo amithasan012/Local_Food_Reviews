@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Local Food Reviews</string>
+    <string name="email">Email address</string>
+    <string name="send_reset_email">Send reset email</string>
+    <string name="reset_email_description">Enter your email and we will send a password-reset link.</string>
+    <string name="send">Send</string>
+    <string name="reset_email_sent">Reset email sent. Please check your inbox.</string>
+    <string name="request_failed">Request failed. Please try again.</string>
+    <string name="valid_email_required">Enter a valid email address.</string>
+    <string name="cuisine_format">Cuisine: %1$s</string>
+    <string name="rating_format">★ %1$d / 5</string>
+    <string name="by_user_on_date">%1$s · %2$s</string>
+    <string name="just_now">Just now</string>
+</resources>

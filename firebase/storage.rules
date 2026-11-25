@@ -1,0 +1,8 @@
+// Cloud Storage is intentionally not used in this Spark-plan edition.
+// See README.md for the reason and the optional Blaze-plan migration path.
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /{allPaths=**} { allow read, write: if false; }
+  }
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="food_primary">#1565C0</color>
+    <color name="food_primary_dark">#0D47A1</color>
+    <color name="food_secondary">#2196F3</color>
+    <color name="food_cream">#F5F9FF</color>
+    <color name="food_surface">#FFFFFF</color>
+    <color name="food_text">#000000</color>
+    <!-- Kept blue so all feedback follows the requested blue design. -->
+    <color name="food_error">#0D47A1</color>
+</resources>

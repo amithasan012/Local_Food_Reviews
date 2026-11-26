@@ -221,7 +221,7 @@ This is a student project. Improvements and suggestions are welcome. Before addi
 
 ## Contact
 
-For project questions or feedback, update this section with your contact information:
+
 
 ```text
 amithasanmr@gmail.com

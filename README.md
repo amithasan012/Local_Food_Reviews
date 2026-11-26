@@ -108,10 +108,10 @@ The application follows a standard Android architecture suitable for a small Kot
 | <img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/4edc931d-dabd-455e-adfd-6cd782b61489" /> |
 | Create Account |
 |---|
-| <img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/0de62577-c098-4022-9ca5-db408329ccd4" /> |
+| <img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/0de62577-c098-4022-9ca5-db408329ccd4" /> |
 | Change Password |
 |---|
-| <img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/9c84539c-49cb-416a-bd8c-f6dc5a80ce5b" /> |
+| <img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/9c84539c-49cb-416a-bd8c-f6dc5a80ce5b" /> |
  
 
 
@@ -119,19 +119,19 @@ The application follows a standard Android architecture suitable for a small Kot
 
 | Review Feed and Search |
 |---|
-| <img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/92d3ae06-3ec6-41e2-a014-43d81ff144d4" /> |
+| <img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/92d3ae06-3ec6-41e2-a014-43d81ff144d4" /> |
 | Navigation Drawer |
 |---| 
-| <img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/26975036-2f70-4c9c-b720-9d18f20ee4c4" /> |
+| <img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/26975036-2f70-4c9c-b720-9d18f20ee4c4" /> |
 
 ### Review Creation and Management
 
 | Add Review |
 |---|
-| <img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/f2134b57-3b3f-4e3f-97d6-76bfb1827e83" /> |
+| <img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/f2134b57-3b3f-4e3f-97d6-76bfb1827e83" /> |
 | My Reviews / Inline Edit |
 |---|
-| <img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/b027f6b6-87b9-4ebc-a56d-5f65ec339968" /> |
+| <img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/b027f6b6-87b9-4ebc-a56d-5f65ec339968" /> |
 
 ## Firebase Data Design
 

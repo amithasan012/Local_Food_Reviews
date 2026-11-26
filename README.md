@@ -2,7 +2,7 @@
 
 <br>
 <p align="center">
- <img width="512" height="512" alt="ramen" src="https://github.com/user-attachments/assets/3056abe0-9afc-40a0-aa79-fd50942033fc" />
+ <img width="300" height="300" alt="ramen" src="https://github.com/user-attachments/assets/3056abe0-9afc-40a0-aa79-fd50942033fc" />
 
 </p>
 
@@ -105,7 +105,7 @@ The application follows a standard Android architecture suitable for a small Kot
 
 | Login |
 |---|
-| <img width="1080" height="2340" alt="image" src="https://github.com/user-attachments/assets/4edc931d-dabd-455e-adfd-6cd782b61489" /> |
+| <img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/4edc931d-dabd-455e-adfd-6cd782b61489" /> |
 | Create Account |
 |---|
 | <img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/0de62577-c098-4022-9ca5-db408329ccd4" /> |
